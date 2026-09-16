@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="out-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#090D14" />
+    </linearGradient>
+    <linearGradient id="out-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5500" />
+      <stop offset="100%" stop-color="#FF7722" />
+    </linearGradient>
+    <linearGradient id="theater-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7F1D1D" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#450A0A" />
+      <stop offset="100%" stop-color="#1C0505" />
+    </linearGradient>
+    <linearGradient id="boardroom-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <filter id="out-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+    <filter id="glow-orange" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#FF5500" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-display { font-family: 'Syne', system-ui, sans-serif; }
+    .font-mono { font-family: 'Space Grotesk', monospace; }
+  </style>
+
+  <!-- Dark Atmospheric Background -->
+  <rect width="1600" height="1000" fill="url(#out-dark)" />
+
+  <!-- Ambient background glow spots -->
+  <circle cx="800" cy="200" r="400" fill="#FF5500" opacity="0.08" filter="blur(80px)" />
+  <circle cx="200" cy="600" r="300" fill="#3B82F6" opacity="0.05" filter="blur(60px)" />
+  <circle cx="1400" cy="700" r="350" fill="#A855F7" opacity="0.06" filter="blur(70px)" />
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <rect x="0" y="0" width="1600" height="90" fill="#0B0F17" fill-opacity="0.85" />
+  <line x1="0" y1="90" x2="1600" y2="90" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Outing Space Logo -->
+  <g transform="translate(80, 28)">
+    <text x="0" y="32" class="font-sans" font-size="30" font-weight="900" letter-spacing="-0.5">
+      <tspan fill="#FF5500">outing</tspan>
+      <tspan fill="#FFFFFF" font-weight="400">Space</tspan>
+    </text>
+  </g>
+
+  <!-- Nav Links -->
+  <g transform="translate(560, 52)" class="font-sans" font-size="15" font-weight="600" fill="#94A3B8">
+    <text x="0" y="0" cursor="pointer">Blogs</text>
+    <text x="90" y="0" cursor="pointer">How it works</text>
+    <text x="230" y="0" cursor="pointer">Log In</text>
+    <text x="310" y="0" cursor="pointer">Sign Up</text>
+  </g>
+
+  <!-- Nav Right CTA: Out Your Space -->
+  <g transform="translate(1340, 22)">
+    <rect x="0" y="0" width="180" height="46" rx="23" fill="url(#out-orange)" filter="url(#glow-orange)" />
+    <text x="90" y="28" class="font-sans" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">Out Your Space</text>
+  </g>
+
+  <!-- ================= HERO SECTION ================= -->
+  <g transform="translate(800, 150)" text-anchor="middle">
+    <!-- Main Headline -->
+    <text x="0" y="60" class="font-sans" font-size="54" font-weight="900" fill="#FFFFFF" letter-spacing="-1.5">
+      We Curate Spaces For Your Needs
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="115" class="font-sans" font-size="18" font-weight="400" fill="#94A3B8">
+      Our team is dedicated to finding the perfect spaces and amenities to make your rental experience truly exceptional
+    </text>
+
+    <!-- CTA Button -->
+    <g transform="translate(-110, 155)">
+      <rect x="0" y="0" width="220" height="52" rx="26" fill="url(#out-orange)" filter="url(#glow-orange)" />
+      <text x="100" y="32" class="font-sans" font-size="16" font-weight="700" fill="#FFFFFF">Discover a Space</text>
+      <!-- Arrow Icon -->
+      <path d="M165 26 L175 26 M171 22 L175 26 L171 30" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    </g>
+  </g>
+
+  <!-- ================= FEATURED DUAL CARDS ================= -->
+  <g transform="translate(80, 400)">
+    <!-- Card 1: Reserve An Outed Space (Auditorium / Cinema) -->
+    <g transform="translate(0, 0)" filter="url(#out-shadow)">
+      <rect x="0" y="0" width="700" height="290" rx="28" fill="#131B28" stroke="#1E293B" stroke-width="1.5" />
+      <!-- Clip inner for background photo simulation -->
+      <g clip-path="url(#card-clip-1)">
+        <clipPath id="card-clip-1">
+          <rect x="0" y="0" width="700" height="290" rx="28" />
+        </clipPath>
+        <!-- Theater Gradient -->
+        <rect x="0" y="0" width="700" height="290" fill="url(#theater-grad)" />
+        <!-- Theater Stage Light Cones & Curved Red Velvet Seats -->
+        <circle cx="350" cy="-60" r="280" fill="#EF4444" opacity="0.3" filter="blur(40px)" />
+        <path d="M-50 290 Q 350 180 750 290" stroke="#B91C1C" stroke-width="32" fill="none" opacity="0.7" />
+        <path d="M-50 250 Q 350 150 750 250" stroke="#DC2626" stroke-width="28" fill="none" opacity="0.5" />
+        <path d="M-50 210 Q 350 120 750 210" stroke="#991B1B" stroke-width="24" fill="none" opacity="0.4" />
+        <!-- Gradient overlay -->
+        <rect x="0" y="0" width="700" height="290" fill="linear-gradient(to right, rgba(11,15,23,0.92) 0%, rgba(11,15,23,0.7) 60%, rgba(11,15,23,0.4) 100%)" />
+      </g>
+
+      <!-- Card Content -->
+      <g transform="translate(50, 60)">
+        <text x="0" y="40" class="font-sans" font-size="34" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">
+          Reserve An Outed Space
+        </text>
+        <text x="0" y="80" class="font-sans" font-size="16" font-weight="500" fill="#E2E8F0">
+          Discover a space tailored just for you
+        </text>
+        <!-- Action Button -->
+        <g transform="translate(0, 115)">
+          <rect x="0" y="0" width="160" height="46" rx="23" fill="url(#out-orange)" />
+          <text x="80" y="28" class="font-sans" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Discover now</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Card 2: Out Your Space (Boardroom / Executive) -->
+    <g transform="translate(740, 0)" filter="url(#out-shadow)">
+      <rect x="0" y="0" width="700" height="290" rx="28" fill="#131B28" stroke="#1E293B" stroke-width="1.5" />
+      <g clip-path="url(#card-clip-2)">
+        <clipPath id="card-clip-2">
+          <rect x="0" y="0" width="700" height="290" rx="28" />
+        </clipPath>
+        <!-- Boardroom Backdrop simulation -->
+        <rect x="0" y="0" width="700" height="290" fill="url(#boardroom-grad)" />
+        <circle cx="550" cy="140" r="220" fill="#0284C7" opacity="0.25" filter="blur(50px)" />
+        <!-- Conference table perspective lines -->
+        <polygon points="200,290 500,290 420,180 280,180" fill="#334155" opacity="0.4" />
+        <line x1="280" y1="180" x2="420" y2="180" stroke="#0EA5E9" stroke-width="2" opacity="0.6" />
+        <rect x="0" y="0" width="700" height="290" fill="linear-gradient(to right, rgba(11,15,23,0.92) 0%, rgba(11,15,23,0.7) 60%, rgba(11,15,23,0.4) 100%)" />
+      </g>
+
+      <!-- Card Content -->
+      <g transform="translate(50, 60)">
+        <text x="0" y="40" class="font-sans" font-size="34" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">
+          Out Your Space
+        </text>
+        <text x="0" y="80" class="font-sans" font-size="16" font-weight="500" fill="#E2E8F0">
+          Turn Your Idle Space Into An Opportunity To Earn
+        </text>
+        <!-- Action Button -->
+        <g transform="translate(0, 115)">
+          <rect x="0" y="0" width="150" height="46" rx="23" fill="url(#out-orange)" />
+          <text x="75" y="28" class="font-sans" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Out now</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= LOWER SECTION: 4 PILLARS STRIP ================= -->
+  <g transform="translate(80, 750)">
+    <text x="0" y="30" class="font-sans" font-size="24" font-weight="800" fill="#FFFFFF">
+      We Provide The Best Services
+    </text>
+
+    <g transform="translate(0, 60)">
+      <!-- Pillar 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="340" height="130" rx="20" fill="#131B28" stroke="#1E293B" stroke-width="1" />
+        <circle cx="44" cy="44" r="22" fill="#FF5500" opacity="0.15" />
+        <circle cx="44" cy="44" r="12" fill="#FF5500" />
+        <text x="80" y="40" class="font-sans" font-size="18" font-weight="700" fill="#FFFFFF">Verified Properties</text>
+        <text x="80" y="62" class="font-sans" font-size="13" font-weight="400" fill="#94A3B8">In-person vetted quality check</text>
+        <text x="80" y="82" class="font-sans" font-size="13" font-weight="400" fill="#94A3B8">and accurate spatial dimensions</text>
+      </g>
+
+      <!-- Pillar 2 -->
+      <g transform="translate(360, 0)">
+        <rect x="0" y="0" width="340" height="130" rx="20" fill="#131B28" stroke="#1E293B" stroke-width="1" />
+        <circle cx="44" cy="44" r="22" fill="#3B82F6" opacity="0.15" />
+        <circle cx="44" cy="44" r="12" fill="#3B82F6" />
+        <text x="80" y="40" class="font-sans" font-size="18" font-weight="700" fill="#FFFFFF">Luxury Amenities</text>
+        <text x="80" y="62" class="font-sans" font-size="13" font-weight="400" fill="#94A3B8">High-speed gigabit Wi-Fi, audio,</text>
+        <text x="80" y="82" class="font-sans" font-size="13" font-weight="400" fill="#94A3B8">AV gear, and catering ready</text>
+      </g>
+
+      <!-- Pillar 3 -->
+      <g transform="translate(720, 0)">
+        <rect x="0" y="0" width="340" height="130" rx="20" fill="#131B28" stroke="#1E293B" stroke-width="1" />
+        <circle cx="44" cy="44" r="22" fill="#10B981" opacity="0.15" />
+        <circle cx="44" cy="44" r="12" fill="#10B981" />
+        <text x="80" y="40" class="font-sans" font-size="18" font-weight="700" fill="#FFFFFF">Personalized Services</text>
+        <text x="80" y="62" class="font-sans" font-size="13" font-weight="400" fill="#94A3B8">Dedicated event concierge support</text>
+        <text x="80" y="82" class="font-sans" font-size="13" font-weight="400" fill="#94A3B8">from walkthrough to checkout</text>
+      </g>
+
+      <!-- Pillar 4 -->
+      <g transform="translate(1080, 0)">
+        <rect x="0" y="0" width="360" height="130" rx="20" fill="#131B28" stroke="#1E293B" stroke-width="1" />
+        <circle cx="44" cy="44" r="22" fill="#A855F7" opacity="0.15" />
+        <circle cx="44" cy="44" r="12" fill="#A855F7" />
+        <text x="80" y="40" class="font-sans" font-size="18" font-weight="700" fill="#FFFFFF">Pricing Analytics</text>
+        <text x="80" y="62" class="font-sans" font-size="13" font-weight="400" fill="#94A3B8">Transparent dynamic rate cards</text>
+        <text x="80" y="82" class="font-sans" font-size="13" font-weight="400" fill="#94A3B8">with zero hidden booking fees</text>
+      </g>
+    </g>
+  </g>
+</svg>
