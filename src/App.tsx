@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { CredibilityStrip } from './components/CredibilityStrip';
 import { ProjectGrid } from './components/ProjectGrid';
+import { GraphicDesignSection } from './components/GraphicDesignSection';
 import { CaseStudyView } from './components/CaseStudyView';
 import { AboutSection } from './components/AboutSection';
 import { ServicesSection } from './components/ServicesSection';
@@ -119,6 +120,9 @@ export default function App() {
 
               {/* Featured Work with Category Filters */}
               <ProjectGrid onSelectProject={handleSelectProject} />
+
+              {/* Graphic Design Showcase */}
+              <GraphicDesignSection />
 
               {/* About Section */}
               <AboutSection

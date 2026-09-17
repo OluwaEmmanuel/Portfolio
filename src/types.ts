@@ -13,6 +13,16 @@ export interface ProjectScreen {
   tag?: string;
 }
 
+export interface GraphicWork {
+  id: string;
+  title: string;
+  category: 'Social Media' | 'Flyer & Poster' | 'Event & Church' | 'Typography & Art';
+  imageUrl: string;
+  client?: string;
+  year: string;
+  description?: string;
+}
+
 export interface DesignTokenColor {
   name: string;
   hex: string;

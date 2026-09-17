@@ -4,6 +4,7 @@ import {
   ProcessStep,
   ToolItem,
   ExperienceItem,
+  GraphicWork,
 } from '../types';
 
 export const DESIGNER_INFO = {
@@ -502,3 +503,52 @@ export const EXPERIENCES: ExperienceItem[] = [
     ],
   },
 ];
+
+export const GRAPHIC_WORKS: GraphicWork[] = [
+  {
+    id: 'african-praise',
+    title: 'African Praise Concert Poster',
+    category: 'Event & Church',
+    imageUrl: '/graphics/african-praise.webp',
+    client: 'Our God Reign Area Headquarters',
+    year: '2025',
+    description: 'Vibrant cultural event flyer design celebrating African music and heritage with authentic African patterns, traditional percussion, and dynamic lighting.',
+  },
+  {
+    id: 'family-weekend',
+    title: 'Family Weekend Celebration',
+    category: 'Flyer & Poster',
+    imageUrl: '/graphics/family-weekend.webp',
+    client: 'The Redeemed Christian Church of God',
+    year: '2024',
+    description: 'Warm and inviting church event design with textured paper aesthetics, clean bold display typography, and balanced visual hierarchy.',
+  },
+  {
+    id: 'fasting-prayers',
+    title: 'Fasting & Prayers / Appreciation Service',
+    category: 'Event & Church',
+    imageUrl: '/graphics/fasting-prayers.webp',
+    client: 'Chapel of Divine Healing, National Orthopaedic Hospital',
+    year: '2025',
+    description: 'Spiritual and reverent flyer composition combining textured double-exposure flame typography, atmospheric mountain elements, and refined layout.',
+  },
+  {
+    id: 'monday-motivation',
+    title: 'We Go Again! Monday Motivation',
+    category: 'Social Media',
+    imageUrl: '/graphics/monday-motivation.webp',
+    client: 'Abby Design Creative Series',
+    year: '2024',
+    description: 'Bold, high-impact social media creative utilizing dramatic aerial overhead photography, dynamic diagonal grid lines, and motivational microcopy.',
+  },
+  {
+    id: 'praise-daily',
+    title: 'Praise Daily Art & Cover',
+    category: 'Typography & Art',
+    imageUrl: '/graphics/praise-daily.webp',
+    client: 'Creative Editorial Series',
+    year: '2024',
+    description: 'Street-art inspired graphic featuring custom graffiti vector backdrops, bold condensed headline lettering, and playful speech bubble callouts.',
+  },
+];
+
